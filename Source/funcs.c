@@ -2,7 +2,7 @@
 
 double func(double x)
 {
-    return x * x * x - 2.0 * x + 1.0;
+    return x * x * x / 30.0 - 4.0 * x * x + 50.0;
 }
 
 void print_output_data(double x1, double x2, unsigned int N, double delta, char* group, char* name)
