@@ -1,15 +1,15 @@
-#ifndef FUNCS_H
-#define FUNCS_H
+#ifndef FUNCS_H 
+#define FUNCS_H 
 
-#include <stdio.h>
-#include <stdlib.h>
+#include <stdio.h> 
+#include <stdlib.h> 
 
 /**
- * @brief Обчислює значення математичної функції f(x) = x^3 - 2x + 1.
+ * @brief Обчислює значення математичної функції f(x) = x^3 / 30 - 4x^2 + 50.
  * @param x Значення аргументу.
  * @return Значення функції при заданому аргументі.
  */
-double func(double x);
+double func(double x); // прототип функції обчислення значення математичної функції 
 
 /**
  * @brief Виводить таблицю значень функції на екран та записує її в текстовий файл,
@@ -21,7 +21,7 @@ double func(double x);
  * @param group Шифр навчальної групи.
  * @param name Прізвище та ім'я виконавця лабораторної роботи.
  */
-void print_output_data(double x1, double x2, unsigned int N, double delta, char* group, char* name);
+void print_output_data(double x1, double x2, unsigned int N, double delta, char* group, char* name); // прототип функції виведення таблиці на екран та її запису в текстовий файл
 
 /**
  * @brief Створює бінарний файл і записує в нього кількість точок,
@@ -31,7 +31,7 @@ void print_output_data(double x1, double x2, unsigned int N, double delta, char*
  * @param N Кількість точок, у яких обчислюється функція.
  * @param delta Крок зміни аргументу.
  */
-void write_bin_file(double x1, double x2, unsigned int N, double delta);
+void write_bin_file(double x1, double x2, unsigned int N, double delta); // прототип функції створення та запису даних у двійковий (бінарний) файл
 
 /**
  * @brief Відкриває бінарний файл, зчитує кількість точок та пари значень
@@ -41,6 +41,6 @@ void write_bin_file(double x1, double x2, unsigned int N, double delta);
  * @param N Кількість точок, у яких обчислюється функція.
  * @param delta Крок зміни аргументу.
  */
-void print_bin_data(double x1, double x2, unsigned int N, double delta);
+void print_bin_data(double x1, double x2, unsigned int N, double delta); // прототип функції зчитування даних із двійкового файлу та їх виведення на екран
 
-#endif
+#endif 
